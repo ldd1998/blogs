@@ -294,6 +294,28 @@ public void jdbcBatchInsert(){
 
 > 测试结果：10W条数据，耗时5秒，平均20000/s，目前最快
 
+### 使用存储过程配合事务
+
+```sql
+use demos;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `BatchInsertDataToCusOder`(IN start_num INT,IN max_num INT)
+BEGIN
+    DECLARE i INT default start_num;
+    WHILE i < max_num DO
+        insert into demos.user(`age`, `name`)
+        values (RAND() * 1000000,CONCAT('ldd', i));
+        SET i = i + 1;
+    END WHILE;
+END;;
+DELIMITER ;
+
+call BatchInsertDataToCusOder(1,100000);
+commit;
+```
+
+> 测试结果33333/s
+
 ### 最后还是发现从文件读取最快
 
 ```sql
