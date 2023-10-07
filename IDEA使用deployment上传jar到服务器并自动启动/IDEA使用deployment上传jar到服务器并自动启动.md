@@ -34,7 +34,7 @@
 
 ### 新增服务器信息
 
-![image-20230928231237543](/Users/macintoshhd/Library/Application Support/typora-user-images/image-20230928231237543.png)
+![](https://picgo-1256570725.cos.ap-shanghai.myqcloud.com/20231007103604.png?imageSlim)
 
 这是已经填写好的服务器信息
 
@@ -48,7 +48,7 @@
 
 填写好之后IDEA右下角会出现服务器信息
 
-![image-20230928231524240](/Users/macintoshhd/Library/Application Support/typora-user-images/image-20230928231524240.png)
+![](https://picgo-1256570725.cos.ap-shanghai.myqcloud.com/20231007103657.png?imageSlim)
 
 可以在这里右键选择要上传的文件进行上传
 
