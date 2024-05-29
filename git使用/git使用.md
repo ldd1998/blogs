@@ -8,3 +8,5 @@
 ## 创建release分支
 
 ## 合并feature到release分支
+
+## release分支合并到master分支
